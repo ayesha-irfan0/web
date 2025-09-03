@@ -1,11 +1,11 @@
 import React from "react";
-import Image from "next/image"; // ✅ Correct import
+import Image from "next/image";
 
 const Page = () => {
   return (
     <div className="text-4xl text-center">
       <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
-        {/* ✅ Using Next.js Image instead of <img> */}
+        {/* ✅ No external script, using Next.js Image */}
         <Image
           className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
           src="/modern-ecommerce-interface.png"
@@ -16,7 +16,6 @@ const Page = () => {
 
         <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
           <blockquote>
-            {/* ✅ Escaped quotes */}
             <p className="text-lg font-medium">
               &quot;Making my Next.js project.&quot;
             </p>
